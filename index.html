@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="show" class="display"></div>
+   
+      </div>
+    <script>
+          class student {
+            constructor ( name,age,state,country,gender ) {
+                this.name = name,
+                this.age = age,
+                this.state = state,
+                this.country = country,
+                this.gender = gender
+            }
+          }
+
+          let Sola = new student('Sola',  "21years","oyo state","nigeria ", "male")
+          let Lola = new student("Lola", "34years","lagos state","nigeria " ,"female")
+          let Tola = new student('Tola',  "11years","osun state","nigeria ", "male")
+          let Kola = new student("kola", "56years","ekiti state","nigeria " ,"male")
+
+        //   console.log(Sola,Lola,Tola,Kola);
+
+            let arr = []
+            arr.push(Sola,Lola,Tola,Kola)
+            arr.map((fame, i)=>{
+                show.innerHTML +=`
+                <div class="container">
+    <div class="card">
+      
+            <h1>${fame.name}</h1>
+            <h2>${fame.age}</h2>
+            <h2>${fame.state}</h2>
+            <h2>${fame.country}</h2>
+            <h2>${fame.gender}</h2>
+                </div>
+            </div>
+
+           `
+            })
+           
+            
+            
+    </script>
+    
+</body>
+</html>
